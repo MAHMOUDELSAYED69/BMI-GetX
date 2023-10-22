@@ -4,31 +4,35 @@ import 'package:BMI/components/colors.dart';
 import 'package:get/get.dart';
 
 class MyController extends GetxController {
-  RxInt counterWeight = 60.obs;
-  RxInt counterAge = 25.obs;
-  RxDouble sliderValueCount = 168.0.obs;
+  int counterWeight = 60;
+  int counterAge = 25;
+  double sliderValueCount = 168.0;
   void incrementWeight() {
     counterWeight++;
+    update();
     // PrintConsole.logConole("weight++ $counterWeight");
   }
 
   void decrementWeight() {
-    if (counterWeight.value != 10) {
+    if (counterWeight != 10) {
       counterWeight--;
+      update();
     }
     // PrintConsole.logConole("weight-- $counterWeight");
   }
 
   void incrementAge() {
-    if (counterAge.value != 110) {
+    if (counterAge != 110) {
       counterAge++;
+      update();
     }
     // PrintConsole.logConole("Age++ $counterAge");
   }
 
   void decrementAge() {
-    if (counterAge.value != 19) {
+    if (counterAge != 19) {
       counterAge--;
+      update();
     }
 
     // PrintConsole.logConole("Age-- $counterAge");
@@ -51,8 +55,8 @@ class MyController extends GetxController {
   }
 
   double get bmiSum =>
-      counterWeight.value /
-      ((sliderValueCount.value / 100) * (sliderValueCount.value / 100));
+      counterWeight /
+      ((sliderValueCount / 100) * (sliderValueCount / 100));
   String get bmiTitle {
     if (bmiSum < 18.5) {
       return 'Underweight';
