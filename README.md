@@ -28,7 +28,7 @@ To run this app on your local machine, follow these steps:
 
 - `flutter`: The Flutter framework.
 - `GetX`: State management for Flutter.
-- ...
+
    
    Make sure you have Flutter and Dart installed. Then, run:
     
