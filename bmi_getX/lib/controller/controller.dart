@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart' show Color;
 import 'package:BMI/components/colors.dart';
 import 'package:get/get.dart';
@@ -6,7 +5,14 @@ import 'package:get/get.dart';
 class MyController extends GetxController {
   int counterWeight = 60;
   int counterAge = 25;
+  bool isMale = false;
+  bool isfemale = false;
   double sliderValueCount = 168.0;
+  void sliderValue() {
+    sliderValueCount;
+    update();
+  }
+
   void incrementWeight() {
     counterWeight++;
     update();
@@ -55,8 +61,7 @@ class MyController extends GetxController {
   }
 
   double get bmiSum =>
-      counterWeight /
-      ((sliderValueCount / 100) * (sliderValueCount / 100));
+      counterWeight / ((sliderValueCount / 100) * (sliderValueCount / 100));
   String get bmiTitle {
     if (bmiSum < 18.5) {
       return 'Underweight';

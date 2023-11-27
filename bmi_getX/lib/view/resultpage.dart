@@ -21,7 +21,7 @@ class ResultPage extends StatelessWidget {
       body: Align(
         alignment: Alignment.center,
         child: SingleChildScrollView(
-          child: Obx(() => Column(
+          child:Column(
                 children: [
                   Container(
                     margin: const EdgeInsets.all(10),
@@ -52,7 +52,7 @@ class ResultPage extends StatelessWidget {
                 ],
               )),
         ),
-      ),
+      
     );
   }
 }
