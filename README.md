@@ -13,7 +13,7 @@ This is a simple BMI (Body Mass Index) calculator app built using Flutter. It he
 ## Technologies Used
 - **Flutter:** A UI toolkit by Google for building natively compiled applications for mobile, web, and desktop from a single codebase.
 - **GetX State Management:** A lightweight, yet powerful state management solution for Flutter applications.
-- 
+  
 ## Getting Started
 To run this app on your local machine, follow these steps:
 1. **Clone the repository:**
