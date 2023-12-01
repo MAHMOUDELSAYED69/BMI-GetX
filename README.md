@@ -26,9 +26,9 @@ To run this app on your local machine, follow these steps:
 2. **Install dependencies:**
   This project uses the following dependencies:
 
-- `flutter`: The Flutter framework.
-- `GetX`: State management for Flutter.
-
+- `flutter`: The Flutter framework (https://flutter.dev/).
+- `GetX`: State management for Flutter (https://pub.dev/packages/get).
+- `flutter_launcher_icons`: (https://pub.dev/packages/flutter_launcher_icons)
    
    Make sure you have Flutter and Dart installed. Then, run:
     
