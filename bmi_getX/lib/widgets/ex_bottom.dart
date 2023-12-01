@@ -19,7 +19,7 @@ class MyButtom extends StatelessWidget {
       color: MyColor.pink,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(backgroundColor: MyColor.pink,),
-        onPressed: onPressed, child: Text(title ?? "NO TITLE",style: const TextStyle(fontSize: 28),)),
+        onPressed: onPressed, child: Text(title ?? "NO TITLE",style: const TextStyle(fontSize: 28,color: Colors.white),)),
     );
   }
 }

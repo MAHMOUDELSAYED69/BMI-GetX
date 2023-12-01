@@ -20,7 +20,7 @@ class MyController extends GetxController {
   }
 
   void decrementWeight() {
-    if (counterWeight != 10) {
+    if (counterWeight != 20) {
       counterWeight--;
       update();
     }
@@ -62,6 +62,8 @@ class MyController extends GetxController {
 
   double get bmiSum =>
       counterWeight / ((sliderValueCount / 100) * (sliderValueCount / 100));
+
+
   String get bmiTitle {
     if (bmiSum < 18.5) {
       return 'Underweight';

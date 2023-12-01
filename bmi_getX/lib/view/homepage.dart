@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: MyColor.bg,
         appBar: AppBar(
           title: Text(MyTitles.bmiCalculator,
-              style: const TextStyle(fontSize: 24)),
+              style: TextStyle(fontSize: 24,color: MyColor.white)),
           backgroundColor: MyColor.card,
           centerTitle: true,
         ),

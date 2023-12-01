@@ -5,7 +5,6 @@ import 'package:BMI/widgets/ex_bottom.dart';
 import 'package:BMI/widgets/ex_res_card.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 class ResultPage extends StatelessWidget {
   const ResultPage({super.key});
   @override
@@ -14,7 +13,7 @@ class ResultPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: MyColor.bg,
       appBar: AppBar(
-        title: Text(MyTitles.bmiResult, style: const TextStyle(fontSize: 24)),
+        title: Text(MyTitles.bmiResult, style: const TextStyle(fontSize: 24,color: Colors.white)),
         backgroundColor: MyColor.card,
         centerTitle: true,
       ),

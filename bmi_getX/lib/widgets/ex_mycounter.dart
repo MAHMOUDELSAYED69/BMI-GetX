@@ -56,6 +56,7 @@ class MyCounter extends StatelessWidget {
                 child: Icon(
                   MyIcons.add,
                   size: 35,
+                  color: Colors.white,
                 )),
             const Padding(padding: EdgeInsets.symmetric(horizontal: 7)),
             FloatingActionButton(
@@ -65,6 +66,7 @@ class MyCounter extends StatelessWidget {
                 child: Icon(
                   MyIcons.remove,
                   size: 35,
+                  color: Colors.white,
                 )),
           ]),
         ],
